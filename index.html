@@ -23,65 +23,78 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --tw-text-opacity: 1;
+        color: #179800 / var(--tw-text-opacity));
+      }
+    </style>
   </head>
   <body class="container mx-auto">
     <!-- nav bar section -->
-    <div class="navbar bg-base-100">
-      <div class="navbar-start">
-        <img class="w-50%" src="image/logo-header.png" alt="" srcset="" />
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Product</a></li>
-          <li><a>Services</a></li>
-          <li><a>Contact us</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <a class="btn">Button</a>
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
-            <li><a>Item 1</a></li>
-            <li><a>Item 3</a></li>
+    <div class="hero-section text-center bg-green-100">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <img class="w-50%" src="image/logo-header.png" alt="" srcset="" />
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact us</a></li>
           </ul>
         </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li class="tt"><a>Item 1</a></li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- nav bar section -->
-    <!-- hero section start -->
-    <div class="hero-section text-center">
-      <h1 class="font-semibold text-6xl mt-24">
+      <!-- nav bar section -->
+      <!-- hero section start -->
+
+      <h1 class="font-semibold text-6xl mt-24 lg:w-auto">
         Freshness
-        <span
+        <span class="text-accent"
           >You Can <br />
           Count</span
         >
         On, Prices You ll Love!
       </h1>
       <img
-        class="m-auto"
+        class="m-auto lg:w-auto"
         src="image/hero-vegetables.png"
         alt="Hero section image"
       />
+    </div>
+
+    <!-- Services cart section -->
+    <div class="container">
+      <h1 class="text-green-600 text-5xl m-16">Services</h1>
     </div>
   </body>
 </html>
