@@ -31,10 +31,10 @@
       }
     </style>
   </head>
-  <body class="container mx-auto">
+  <body class="">
     <!-- nav bar section -->
-    <div class="hero-section text-center bg-green-100">
-      <div class="navbar bg-base-100">
+    <div class="hero-section text-center bg-green-50">
+      <div class="navbar bg-base-100 bg-green-50 container m-auto">
         <div class="navbar-start">
           <img class="w-50%" src="image/logo-header.png" alt="" srcset="" />
         </div>
@@ -51,33 +51,26 @@
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
+                class="inline-block h-16 w-14 stroke-current"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
               </svg>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li class="tt"><a>Item 1</a></li>
-              <li><a>Item 3</a></li>
-            </ul>
           </div>
         </div>
       </div>
       <!-- nav bar section -->
+
       <!-- hero section start -->
 
-      <h1 class="font-semibold text-6xl mt-24 lg:w-auto">
+      <h1 class="font-semibold text-4xl mt-24 lg:text-7xl">
         Freshness
         <span class="text-accent"
           >You Can <br />
@@ -86,15 +79,75 @@
         On, Prices You ll Love!
       </h1>
       <img
-        class="m-auto lg:w-auto"
+        class="m-auto"
         src="image/hero-vegetables.png"
         alt="Hero section image"
       />
     </div>
-
     <!-- Services cart section -->
-    <div class="container">
-      <h1 class="text-green-600 text-5xl m-16">Services</h1>
+    <div class="container m-auto">
+      <div>
+        <h1 class="text-green-600 text-5xl mt-16 mb-12">Services</h1>
+        <div class="gap-16 container lg:flex m-auto">
+          <!-- 1st card start -->
+          <div
+            class="card bg-green-100 p-8 w-96 h-96 items-center justify-center ml-14"
+          >
+            <div class="rounded-full h-40 w-40 bg-white flex p-3">
+              <img
+                class="m-auto"
+                src="image/service.png"
+                alt="service logo"
+                srcset=""
+              />
+            </div>
+            <div class="text-3xl font-bold mt-6 mb-3">24/7 Services</div>
+            <p class="text-gray-500 text-center">
+              We provide 24/7 service, ensuring you can access help or support
+              anytime, day or night.
+            </p>
+          </div>
+          <!-- 1st card end -->
+          <!-- 2st card start -->
+          <div
+            class="card bg-green-100 p-8 w-96 h-96 items-center justify-center mt-5 mb-5 ml-14"
+          >
+            <div class="rounded-full h-40 w-40 bg-white flex p-3">
+              <img
+                class="m-auto"
+                src="image/delivery.png"
+                alt="service logo"
+                srcset=""
+              />
+            </div>
+            <div class="text-3xl font-bold mt-6 mb-3">24/7 Services</div>
+            <p class="text-gray-500 text-center">
+              We provide 24/7 service, ensuring you can access help or support
+              anytime, day or night.
+            </p>
+          </div>
+          <!-- 2nd card end -->
+          <!-- 3rd card start -->
+          <div
+            class="card bg-green-100 p-8 w-96 h-96 items-center justify-center ml-14"
+          >
+            <div class="rounded-full h-40 w-40 bg-white flex p-3">
+              <img
+                class="m-auto"
+                src="image/healthy.png"
+                alt="service logo"
+                srcset=""
+              />
+            </div>
+            <div class="text-3xl font-bold mt-6 mb-3">24/7 Services</div>
+            <p class="text-gray-500 text-center">
+              We provide 24/7 service, ensuring you can access help or support
+              anytime, day or night.
+            </p>
+          </div>
+          <!-- 3rd card end -->
+        </div>
+      </div>
     </div>
   </body>
 </html>
