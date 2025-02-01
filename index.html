@@ -13,9 +13,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- ******daisyUI + Tailwind CSS CDN end****** -->
+    <script
+      src="https://kit.fontawesome.com/00d7eeb9e4.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- ******custom css****** -->
     <link rel="stylesheet" href="assets/style.css" />
-
     <!-- ******google font****** -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,12 +27,6 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --tw-text-opacity: 1;
-        color: #179800 / var(--tw-text-opacity));
-      }
-    </style>
   </head>
   <body class="">
     <!-- nav bar section -->
@@ -72,7 +69,7 @@
 
       <h1 class="font-semibold text-4xl mt-24 lg:text-7xl">
         Freshness
-        <span class="text-accent"
+        <span class="text-green-700"
           >You Can <br />
           Count</span
         >
@@ -85,21 +82,16 @@
       />
     </div>
     <!-- Services cart section -->
-    <div class="container m-auto">
+    <div class="container m-auto mb-36">
       <div>
         <h1 class="text-green-600 text-5xl mt-16 mb-12">Services</h1>
-        <div class="gap-16 container lg:flex m-auto">
+        <div class="lg:gap-16 mx-auto lg:flex">
           <!-- 1st card start -->
           <div
-            class="card bg-green-100 p-8 w-96 h-96 items-center justify-center ml-14"
+            class="card bg-green-100 p-8 w-96 h-96 items-center justify-center"
           >
             <div class="rounded-full h-40 w-40 bg-white flex p-3">
-              <img
-                class="m-auto"
-                src="image/service.png"
-                alt="service logo"
-                srcset=""
-              />
+              <img class="m-auto" src="image/service.png" alt="service logo" srcset="" />
             </div>
             <div class="text-3xl font-bold mt-6 mb-3">24/7 Services</div>
             <p class="text-gray-500 text-center">
@@ -110,7 +102,7 @@
           <!-- 1st card end -->
           <!-- 2st card start -->
           <div
-            class="card bg-green-100 p-8 w-96 h-96 items-center justify-center mt-5 mb-5 ml-14"
+            class="card bg-green-100 p-8 w-96 h-96 items-center justify-center"
           >
             <div class="rounded-full h-40 w-40 bg-white flex p-3">
               <img
@@ -129,7 +121,7 @@
           <!-- 2nd card end -->
           <!-- 3rd card start -->
           <div
-            class="card bg-green-100 p-8 w-96 h-96 items-center justify-center ml-14"
+            class="card bg-green-100 p-8 w-96 h-96 items-center justify-center"
           >
             <div class="rounded-full h-40 w-40 bg-white flex p-3">
               <img
@@ -149,5 +141,117 @@
         </div>
       </div>
     </div>
+    <!-- Popular Products section -->
+     <section class="bg-green-100 pt-36 pb-40">
+      <section class="max-w-7xl mx-auto ">
+          <h2 class="text-2xl  font-bold text-green-700 mb-6">Popular Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:mx-auto ">
+              <!-- Promo Card -->
+              <div class="bg-green-500 h-[400] w-[424] pl-8 pt-14 rounded-lg border border-green-500 relative md:col-span-1" >
+                <h1 class="text-5xl text-white font-bold">30% off</h1>
+                <h5 class="mt-5 font-normal"> Discover a world of treats, toys, and essentials handpicked for </h5>
+                <button class="btn pl-8 pr-8 mt-7 mb-44">Buy Now</button>
+                <img class="absolute bottom-0 right-0 " src="image/vegetable-offer.png" alt="" srcset="" />
+              </div>
+              
+              <!-- Product Grid -->
+              <div class="w-[872] h-[400]  md:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-4 justify-center">
+                  <div class="bg-white w-[275] h-[118] p-4 rounded-lg shadow flex items-center space-x-4">
+                    <div class="bg-green-50 rounded-lg m-0">
+                      <img src="image/1.png" class="w-20 h-20" alt="Onion" srcset="" />
+                    </div>
+                    <div class="m-0">
+                      <i class="fa fa-star" aria-hidden="true"> 4.5</i>
+                      <p class="font-bold text-sm my-2">Onion 1 KG</p>
+                      <p class="tet--">$39.99/p></p>
+                    </div>
+                  </div>
+                  <div class="bg-white w-[275] h-[118] p-4 rounded-lg shadow flex items-center space-x-4">
+                    <div class="bg-green-50 rounded-lg">
+                      <img src="image/1.png" class="w-16 h-16" alt="Onion" srcset="" />
+                    </div>
+                    <div class="">
+                      <i class="fa fa-star" aria-hidden="true"> 4.5</i>
+                      <p class="font-bold text-sm my-2">Onion 1 KG</p>
+                      <p class="tet--">$39.99/p></p>
+                    </div>
+                  </div>
+                  <div class="bg-white w-[275] h-[118] p-4 rounded-lg shadow flex items-center space-x-4">
+                    <div class="bg-green-50 rounded-lg">
+                      <img src="image/1.png" class="w-16 h-16" alt="Onion" srcset="" />
+                    </div>
+                    <div class="">
+                      <i class="fa fa-star" aria-hidden="true"> 4.5</i>
+                      <p class="font-bold text-sm my-2">Onion 1 KG</p>
+                      <p class="tet--">$39.99/p></p>
+                    </div>
+                  </div>
+                  <div class="bg-white w-[275] h-[118] p-4 rounded-lg shadow flex items-center space-x-4">
+                    <div class="bg-green-50 rounded-lg">
+                      <img src="image/1.png" class="w-16 h-16" alt="Onion" srcset="" />
+                    </div>
+                    <div class="">
+                      <i class="fa fa-star" aria-hidden="true"> 4.5</i>
+                      <p class="font-bold text-sm my-2">Onion 1 KG</p>
+                      <p class="tet--">$39.99/p></p>
+                    </div>
+                  </div>
+                  <div class="bg-white w-[275] h-[118] p-4 rounded-lg shadow flex items-center space-x-4">
+                    <div class="bg-green-50 rounded-lg">
+                      <img src="image/1.png" class="w-16 h-16" alt="Onion" srcset="" />
+                    </div>
+                    <div class="">
+                      <i class="fa fa-star" aria-hidden="true"> 4.5</i>
+                      <p class="font-bold text-sm my-2">Onion 1 KG</p>
+                      <p class="tet--">$39.99/p></p>
+                    </div>
+                  </div>
+                  <div class="bg-white w-[275] h-[118] p-4 rounded-lg shadow flex items-center space-x-4">
+                    <div class="bg-green-50 rounded-lg">
+                      <img src="image/1.png" class="w-16 h-16" alt="Onion" srcset="" />
+                    </div>
+                    <div class="">
+                      <i class="fa fa-star" aria-hidden="true"> 4.5</i>
+                      <p class="font-bold text-sm my-2">Onion 1 KG</p>
+                      <p class="tet--">$39.99/p></p>
+                    </div>
+                  </div>
+                  <div class="bg-white w-[275] h-[118] p-4 rounded-lg shadow flex items-center space-x-4">
+                    <div class="bg-green-50 rounded-lg">
+                      <img src="image/1.png" class="w-16 h-16" alt="Onion" srcset="" />
+                    </div>
+                    <div class="">
+                      <i class="fa fa-star" aria-hidden="true"> 4.5</i>
+                      <p class="font-bold text-sm my-2">Onion 1 KG</p>
+                      <p class="tet--">$39.99/p></p>
+                    </div>
+                  </div>
+                  <div class="bg-white w-[275] h-[118] p-4 rounded-lg shadow flex items-center space-x-4">
+                    <div class="bg-green-50 rounded-lg">
+                      <img src="image/1.png" class="w-16 h-16" alt="Onion" srcset="" />
+                    </div>
+                    <div class="">
+                      <i class="fa fa-star" aria-hidden="true"> 4.5</i>
+                      <p class="font-bold text-sm my-2">Onion 1 KG</p>
+                      <p class="tet--">$39.99/p></p>
+                    </div>
+                  </div>
+                  <div class="bg-white w-[275] h-[118] p-4 rounded-lg shadow flex items-center  space-x-4">
+                    <div class="bg-green-50 rounded-lg">
+                      <img src="image/1.png" class="w-16 h-16" alt="Onion" srcset="" />
+                    </div>
+                    <div class="">
+                      <i class="fa fa-star" aria-hidden="true"> 4.5</i>
+                      <p class="font-bold text-sm my-2">Onion 1 KG</p>
+                      <p class="tet--">$39.99/p></p>
+                    </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </section>
+  </section>
+
+
   </body>
 </html>
